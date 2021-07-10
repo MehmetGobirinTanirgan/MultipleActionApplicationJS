@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Challenge Application</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="JavaScriptChallenge.css">
+    <link rel="stylesheet" media="(max-width: 1600px)" href="/JavaScriptChallengeMobile.css">
+</head>
+
+<body>  
+    <div class="container-fluid" style="background: #81C14B; height: 5px;">
+    </div>
+    <!-- Navbar -->
+    <div class="container-fluid bg-color">
+        <div class="row" style="border-bottom:1px solid black;" id="navrow">
+            <div class="col-8 offset-md-2 bg-color" id="navcol">
+                <div class="row">
+                    <div class="col-9 d-flex justify-content-center">
+                        <form class="form-inline mt-2">
+                            <input class="form-control" type="text" id="search" placeholder="Search entry...  "
+                                style="height: 25px; width: 300px; border: 2px solid #81C14B">
+                            <div style="width: 20px; height: 25px; background: #81C14B; border: 1px solid #81C14B; border-radius: 3px;">
+                                <i class="fas fa-search"
+                                    style="color: white; background: #81C14B; border-radius: 1px;"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-3" id="navlastcol">
+                        <a href="#">me</a>
+                        <a href="#">message</a>
+                        <a href="#">happening</a>
+                    </div>
+                </div>
+                <div class="row align-items-center" style="height: 70px;">
+                    <div class="col mt-3">
+                        <ul class="d-flex justify-content-around" id="navlist">
+                            <li><a href="#">today</a></li>
+                            <li><a href="#">agenda</a></li>
+                            <li><a href="#">debe</a></li>
+                            <li><a href="#">problematic</a></li>
+                            <li><a href="#">follow</a></li>
+                            <li><a href="#">end</a></li>
+                            <li><a href="#">edge</a></li>
+                            <li><a href="#">rookies</a></li>
+                            <li><a href="#">#sport</a></li>
+                            <li><a href="#">#relations</a></li>
+                            <li><a href="#">#politics</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid bg-color" style="height: 1500px;">
+        <div class="row" id="mainrow">
+            <div class="col-8 offset-md-2 bg-color" id="maincol">
+                <div class="row mt-3">
+                    <!-- Side Bar -->
+                    <div class="col-3" id="sidebarcol">
+                        <div class="side-bar">
+                            <h5 class="font-color" style="font-weight: lighter;">today</h5>
+                            <button type="button" class="btn btn-secondary" id="refreshbtn">refresh <i
+                                    style="margin-top: 5px;" class="fas fa-redo fa-xs"></i></button>
+                            <ul id="entrylist">
+                                <!-- <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Main Area -->
+                    <div class="col-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="entry-title">Title:</label>
+                                <input type="text" class="form-control" id="entry-title" placeholder="Enter title...">
+                            </div>
+                            <div class="form-group">
+                                <label for="entrytextarea">Entry:</label>
+                                <textarea class="form-control" id="entrytextarea" rows="3"
+                                    placeholder="Enter entry..."></textarea>
+                            </div>
+                            <div id="entrysubmit" class= "d-flex justify-content-between" style="height: 50px;">
+                                <button type="button" class="btn btn-secondary" id="submitbtn">Submit</button>
+                            </div>
+                        </form>
+                        <ul id="mainlist">
+                            <!-- <li>
+                                <h4><a href="#">boyd bushman'ın ifşa ettiği uzaylı fotoğrafları</a> <a href="#"><i style="float: right;" class="fas fa-trash-alt"></i></a></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consectetur ab
+                                    laboriosam consequatur necessitatibus, repellat est reiciendis consequuntur dolorum
+                                    distinctio labore beatae deserunt excepturi dolorem soluta quaerat a voluptate, quae
+                                    quibusdam, tenetur illum nihil sint eum ratione? Beatae velit autem nobis
+                                    consectetur ut numquam deserunt dolore, error odit sit, accusantium delectus
+                                    pariatur sed vel rem obcaecati amet aliquam ipsam ullam, dolorem esse quam quis
+                                    quisquam temporibus. Repellat consectetur, veniam soluta sed quae voluptates
+                                    corrupti sint nulla vitae natus alias cum minus eius provident unde aspernatur sunt
+                                    libero praesentium vel quo! Nisi ut veniam omnis exercitationem, ad hic voluptate
+                                    corporis accusamus?</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScriptChallenge.js"></script>
+</body>
+</html>

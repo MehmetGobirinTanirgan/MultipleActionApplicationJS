@@ -1,0 +1,98 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{    
+   text-decoration: none;
+   color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.bg-color{
+    background: #2D2D2D;
+}
+
+#searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 30px;
+    background: #81C14B;
+}
+
+.font-color{
+    color: lightgrey;
+}
+#navlist li a{
+    color: lightgrey;
+}
+
+#navlist li a:hover{
+    text-decoration: none;
+    color: #81C14B;
+}
+#entrylist li a{
+    color: lightgrey;
+    font-size: 14px;
+}
+
+#entrylist li a:hover{
+    background: rgb(36, 35, 35);
+    text-decoration: none;
+    padding: 2px;
+}
+#navlinks:hover{
+    color: #81C14B;
+
+}
+
+#refreshbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    background:#2D2D2D; 
+}
+
+#navlastcol a{
+    color: lightgrey;
+}
+#navlastcol a:hover{
+    color: lightgrey;
+}
+#mainlist a{
+    color: lightgrey;
+}
+
+#mainlist a:hover{
+    color: lightgrey;
+}
+
+#mainlist p{
+    color: lightgrey;
+}
+
+#entrytextarea{
+    resize: none;
+}
+
+.form-control:focus{
+
+    border-color: #81C14B;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #81C14B;    
+}
+
+.form-group label{
+    color: lightgrey;
+}
+
+#submitbtn{
+    margin-left: 40%;
+    background:#2D2D2D; 
+}

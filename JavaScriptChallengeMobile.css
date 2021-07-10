@@ -1,0 +1,22 @@
+#maincol{
+  margin-left: 0;
+  height: max-content;
+}
+
+#navcol{
+    margin-left: 0;
+}
+
+#navrow{
+    justify-content: center;
+}
+
+#mainrow{
+    justify-content: center;
+}
+
+#refreshbtn{
+   
+    width: fit-content;
+ 
+}
