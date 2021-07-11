@@ -5,7 +5,7 @@ const mainlist = document.getElementById("mainlist");
 const entrylist = document.getElementById("entrylist");
 const searchElement = document.getElementById("search");
 const submitBtn = document.getElementById("entrysubmit");
-
+const refreshBtn = document.getElementById("refreshbtn");
 
 eventListeners();
 
@@ -15,6 +15,10 @@ function eventListeners() {
     searchElement.addEventListener("keyup", searchEntry);
     document.addEventListener("DOMContentLoaded", keepAliveEntries);
     entrylist.addEventListener("click", bringEntry);
+    mainlist.addEventListener("click", bringEntry);
+    refreshBtn.addEventListener("click",function(){
+        location.reload();
+    });
 };
 
 
@@ -28,7 +32,7 @@ function entryWrite(e) {
 function entryCreate(entryTitle, entryText) {
     let check;
     if (entryText === "" || entryTitle === "") {
-        displayAlert("Boş alan bırakma!");
+        displayAlert("Type something!");
     } else {
         check = searchTitleISExist(entryTitle, entryText);
         if (check === true) {
@@ -87,7 +91,6 @@ function searchEntry(e) {
 };
 
 function searchForEntry(searchThis) {
-
     let child = mainlist.firstElementChild;
     let length = mainlist.childElementCount;
     let checkText = child.firstElementChild.firstElementChild.textContent.toLowerCase();
@@ -160,7 +163,9 @@ function keepAliveEntries() {
 };
 
 function bringEntry(e) {
-    searchForEntry(e.target.textContent);
+    if(e.target.textContent !== ""){
+        searchForEntry(e.target.textContent);
+    } 
 };
 
 function searchTitleISExist(searchTitle, entryText) {
